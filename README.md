@@ -6,6 +6,7 @@ to try and predict so-called "Strokes Gained" statistics, which are complicated 
 https://github.com/NishadKhudabux/Data-Science-in-Golf-Strokes-Gained-vs-Traditional-Metrics.<br/>
   
 After cleaning and merging the data, I had roughly 700 player seasons to work with from 2015-2018. I performed Linear, Lasso, Ridge, and Support Vector (SVR) regressions (both kernel-based and linear), with hyper-parameter tuning and k-fold cross-validation. Every model which produced a linear regression function ultimately performed similarly. I settled on a linear SVR approach for my final model, which I then applied to my test data. The final model was better on some strokes gained areas than others, and I've listed each target variable with its final R^2 score.
+* SG: Off the tee .71
 * SG: Approach .74
 * SG: Around the Green .43
 * SG: Putting .66
